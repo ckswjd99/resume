@@ -1,0 +1,68 @@
+%-------------------------
+% CV for Northeastern University Faculty in Latex
+% Author : Zoe Kearney
+% Based off of: https://www.overleaf.com/latex/templates/coles-resume-template/qhpynjcvjpcj
+% Follows: https://theprofessorisin.com/2016/08/19/dr-karens-rules-of-the-academic-cv/
+% License : MIT
+%------------------------
+
+% Document class and font size
+\documentclass[a4paper,10pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{a4paper, margin=1in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{empty}
+
+% Header
+\begin{center}
+\textbf{\LARGE Chanjeong Park }\\[6pt] % Name
+\textbf{\large Curriculum Vitae}\\[6pt]
+
+\href{mailto:cjpark99@snu.ac.kr}{cjpark99@snu.ac.kr}\\
+Seoul National University (SNU)\\
+1, Gwanak-ro, Gwanak-gu, Seoul, 08826, South Korea\\
+\end{center}
+
+%------------------------
+
+% Section: Profile
+\input{sections/profile}
+
+
+% Section: Research Interests
+\input{sections/research_interests}
+
+
+% Section: Education
+\input{sections/education}
+
+
+% Section: Honors and Awards
+\input{sections/awards}
+
+
+% Section: Publications
+\input{sections/publications}
+
+
+% Section: Skills and Techniques
+\input{sections/skills}
+
+
+% End document
+\end{document}
